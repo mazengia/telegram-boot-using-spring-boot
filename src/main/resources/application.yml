@@ -1,0 +1,20 @@
+
+spring:
+  config:
+    use-legacy-processing: true
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+#        dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+
+  datasource:
+     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/mazeboot
+     username: root
+     password:
+bot:
+  token: "6301427506:AAGHnvj22xNxiLLM2NGljTHT61z5l7347DE"
+  name: mazegetie_bot
